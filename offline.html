@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<title>CSDT Home | CSDT</title>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="css/fontawesome.css">
+
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="css/bootstrap-4.css" type="text/css">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Specific CSS for this tool -->
+  <link rel="stylesheet" href="template.css">
+
+  <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1314478-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-1314478-4');
+  </script>
+
+  <!-- jQuery 3.4.1 -->
+  <script src="js/jquery-3.4.1.js" type="application/javascript"></script>
+
+  <!-- Latest compiled and minified JavaScript for Bootstrap -->
+  <script src="js/popper.js" type="application/javascript">
+  </script>
+
+  <script src="js/bootstrap-4.js" type="application/javascript">
+  </script>
+
+  <!-- Plyr CSS -->
+  <link rel="stylesheet" href="css/plyr.css" />
+
+  <!-- Video Player (plyr)-->
+  <script src="js/plyr.js"></script>
+
+  <!-- Main JavaScript -->
+  <script src='/js/static-cloud.js'></script>
+  <script src='/js/main.js'></script>
+
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class='container'>
+
+      <div class="navbar-brand">
+        <a href="http://www.nsf.gov">
+          <img src="img/misc/nsf.gif" width="40" height="40" class="d-inline-block align-top logo-img" alt="">
+        </a>
+        <a href="index.html">
+          <img src="img/misc/logo.svg" width="100" height="40" class="d-inline-block align-top logo-img" alt="">
+        </a>
+      </div>
+
+      <!-- Toggle for Mobile Navigation -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation Link Container -->
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav d-flex">
+          <li class="nav-item align-self-center">
+            <a class="nav-link" href="offline.html">Projects</a>
+          </li>
+          <li class="nav-item align-self-center">
+            <a class="nav-link " href="offline.html">News</a>
+          </li>
+          <li class="nav-item align-self-center">
+            <a class="nav-link " href="offline.html">Publications</a>
+          </li>
+          <li class="nav-item align-self-center">
+            <a class="nav-link align-self-center" href="offline.html">About</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav d-flex">
+          <li class="nav-item align-self-center" id='user-sign-up'>
+            <a class="nav-link align-self-center" href="offline.html" style="color: rgba(255,255,255,1);">Sign Up
+              &nbsp; </a>
+          </li>
+          <li class="nav-item dropdown align-self-center">
+            <a class="nav-link" href="offline.html" id="user-status" role="button" aria-haspopup="true"
+              aria-expanded="false" data-status='login'>
+              <i class="far fa-user user-ind"></i>&nbsp; Login
+            </a>
+            <div class="dropdown-menu" aria-labelledby="user-status" style="z-index: 1050;">
+              <a class="dropdown-item" href="#" id='user-projects'>My Projects</a>
+              <a class="dropdown-item" href="#" id='user-classrooms'>My Classrooms</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/accounts/logout/" id="logout-btn" hidden>Not you?
+                (LOGOUT)</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container fixed-top d-none d-sm-none d-lg-block">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+
+  </nav>
+
+
+  <!-- Mobile Navigation -->
+  <div class="fixed-top d-block d-lg-none" style="top:65px;z-index:1">
+    <div class="collapse" id="sectionNavigation">
+      <div class="bg-dark p-4">
+        <ul id='mobileNavigation' class="navbar-nav d-block d-sm-block d-lg-none">
+        </ul>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-dark bg-dark justify-content-between" style="background: #2f2e2e!important;">
+      <div class="container">
+        <span style="color:rgba(255,255,255,.5); max-width:50%"></span>
+        <span class="nav-item bar align-self-center" style="border-color:rgba(255,255,255,.5)"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sectionNavigation"
+          aria-controls="sectionNavigation" aria-expanded="false" aria-label="Toggle navigation"
+          style="font-size: small;">
+          Jump to Section
+        </button>
+      </div>
+
+    </nav>
+  </div>
+  <div class="container container-body mt-5 mt-lg-0">
+    <div class='row'>
+      <div class='col-lg-12'>
+        <h1>Oops, this page is not availabe in the offline version of CSDTs</h1>
+        <p>CLick <a href="index.html">here</a> to go back to the homepage.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
